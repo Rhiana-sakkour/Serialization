@@ -1,0 +1,13 @@
+# build output
+target/
+generated-manual/
+
+# produced by StaticFieldCrossJvmDemo (binary, regenerated on every run)
+results/customer.ser
+
+# editors / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db

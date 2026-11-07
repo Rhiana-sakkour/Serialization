@@ -1,0 +1,20 @@
+Protobuf payload size: 35 bytes
+Restored name: Ahmad Saleh
+Default city: Damascus
+
+--- Inspecting the generated API ---
+hasCity() on the sent message : false  (field was never set, so nothing is sent on the wire)
+getCity() on the sent message : Damascus  (default value declared in the .proto file)
+getPurchasedItemsCount()    : 2
+getPurchasedItemsList()     : [Laptop, Mouse]
+getItemPricesList()         : [1200, 25]
+getItemPrices(1)            : 25
+getIsHolidayDealEligible()  : true
+hasIsHolidayDealEligible()  : true
+
+--- Hex dump of the message (tags + values only, no field names) ---
+0A 0B 41 68 6D 61 64 20 53 61 6C 65 68 1A 06 4C
+61 70 74 6F 70 1A 05 4D 6F 75 73 65 20 B0 09 20
+19 28 01
+
+As printable text: ..Ahmad Saleh..Laptop..Mouse .. .(.

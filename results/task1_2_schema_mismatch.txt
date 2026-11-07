@@ -1,0 +1,11 @@
+Sender (service 1) sends        : {"prices": ["1200", "25", "85"]}
+Receiver (service 2) expects    : {"prices": [1200.00, 25.00, 85.00]}
+
+--- Receiver processes the sender's message ---
+DeserializationException: Cannot deserialize $.prices[0]: expected NUMBER but found STRING (value="1200")
+-> The message only describes the mismatch; it does not say which service is right.
+
+--- Receiver processes a message in the expected format ---
+Product of prices = 2550000.00
+
+Note: in JSON the numbers 1200 and 1200.00 are identical; the concept of 'two decimal places' only exists if it is defined in an external schema.

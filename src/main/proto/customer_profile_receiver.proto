@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+// Receiver-side copy of the schema: only the FIELD NAME changed, the tag number is still 1.
+// Different package / outer class name only so both stubs can live in one Maven project.
+package distributed.lab.receiver;
+
+option java_package = "com.distributed.lab.receiver";
+option java_outer_classname = "CustomerProfileReceiverProto";
+
+message CustomerProfile {
+    required string client_full_name = 1;
+    optional string city = 2 [default = "Damascus"];
+    repeated string purchased_items = 3;
+    repeated int32 item_prices = 4;
+    optional bool is_holiday_deal_eligible = 5 [default = false];
+}

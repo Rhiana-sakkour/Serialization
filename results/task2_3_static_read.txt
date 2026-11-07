@@ -1,0 +1,4 @@
+[JVM #2] read 345 bytes from results\customer.ser
+[JVM #2] restored object : CustomerProfile{systemVersion='v2.4', tempDiscountToken='null', customerName='Ahmad Saleh', purchasedItems=[Laptop, Mouse], itemPrices=[1200, 25], isHolidayDealEligible=true, address=null}
+[JVM #2] systemVersion   = v2.4   (the writer's value 'WRITER-JVM-9.9' was NOT transported)
+[JVM #2] tempDiscountToken = null

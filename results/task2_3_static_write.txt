@@ -1,0 +1,2 @@
+[JVM #1] systemVersion at serialization time = WRITER-JVM-9.9
+[JVM #1] wrote 345 bytes to results\customer.ser
